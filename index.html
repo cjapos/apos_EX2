@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Web Output #2</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td width="100px">
+                    <label for="txtfname">First Name:</label>
+                </td>
+                <td>
+                    <input type="text"  placeholder="Enter First Name">
+                </td>
+            </tr>
+            <tr>
+                <td width="100px">
+                    <label for>Middle Name:</label>
+                </td>
+                <td>
+                    <input type="text"  placeholder="Enter Middle Name">
+                </td>
+            </tr>
+            <tr>
+                <td width="100px">
+                    <label for>Last Name:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td width="100px">
+                    <label for>Age:</label>
+                </td>
+                <td>
+                    <input type="number"  placeholder="Enter Age">
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                    <button id="btnInsertUpdate" value="insert">Insert</button>
+                    <button id="btnClear"> Clear</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Records</legend>
+        <p id="status" class="notif-display"> Empty Record/s</p>
+        <table id="tblRecords" class="tbl-records">
+            <Thead>
+                <tr class="content-container">
+                    <th class="content-title">First Name</th>
+                    <th class="content-title">Middle Name</th>
+                    <th class="content-title">Last Name</th>
+                    <th class="content-title">Age</th>
+                    <th style="padding: 5px;">Action</th>
+                </tr>
+            </Thead>
+        </table>
+    </fieldset>
+    <button id="btnClearItems" class="btn-clear">Clear Records</button>
+    <label for="sortname" id="labelsort" class="sort-items">Sort By:</label>
+    <select name="sortname" id="sortname" class="select-sort">
+        <option value="select" selected disabled>Please Select Options</option>
+        <option value="fname">First Name</option>
+        <option value="lname">Last Name</option>
+    </select>
+    <select name="sort" id="sort" class="select-sort">
+        <option value="select" selected disabled>Please Select Options</option>
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+    </select>
+    <button id="btnsave" class="btn-save">Save to Local Storage</button>
+    <script src="main.js"></script>
+</body>
+</html>

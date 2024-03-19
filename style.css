@@ -1,0 +1,39 @@
+.notif-display {
+    color: rgb(185, 0, 0);
+    font-size: small;
+    display: inline;
+}
+
+.tbl-records {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.btn-clear {
+    margin-top: 15px;
+    display: inline;
+}
+
+.sort-items {
+    display: inline;
+}
+
+.select-sort {
+    
+    display: none;
+}
+
+.btn-save {
+    margin-top: 15px;
+    display: inline;
+}
+
+.content-container {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.content-title {
+    padding: 5px;
+    border-right: 1px solid black;
+}
